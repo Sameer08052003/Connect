@@ -96,9 +96,6 @@ const _getVerticalPadding = padding => {
   return <View style={{height: heightPixel(padding)}} />;
 };
 
-
-
-
 const colors = {
   buttonBackground: '#78787A99',
   RED: '#F44336',
@@ -110,6 +107,7 @@ const colors = {
   _RIBBLE: '#414040',
   TRANS_BLACK: 'rgba(0,0,0,0.2)',
   _DARK_GRAY: '#848282',
+  SECONDARY: '#F05E5E',
 };
 
 const _getOldDate = () => {
