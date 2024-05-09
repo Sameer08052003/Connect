@@ -55,6 +55,7 @@ const darkColorSet = {
   black: '#000',
   primaryColor: '#ECC94C',
   orderItemBG: '#F8F9FE',
+  white: '#ffffff',
 
   buttonText: '#fff',
   red2: '#d12122',
@@ -102,6 +103,11 @@ const getAllStyles = () => {
     },
     text_12_Regular_Grey: {
       color: colorSet[scheme].mainSubtextColor,
+      fontSize: fonts._12,
+      fontWeight: '500',
+    },
+    text_12_Regular_white: {
+      color: colorSet[scheme].white,
       fontSize: fonts._12,
       fontWeight: '500',
     },
@@ -179,6 +185,11 @@ const getAllStyles = () => {
       color: colorSet[scheme].black,
       fontSize: fonts._18,
       fontWeight: '500',
+    },
+    text_18_Bold_black: {
+      color: colorSet[scheme].black,
+      fontSize: fonts._18,
+      fontWeight: '700',
     },
     text_20_Medium_White: {
       color: colorSet[scheme].white,

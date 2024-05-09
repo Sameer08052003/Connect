@@ -99,6 +99,7 @@ const _getVerticalPadding = padding => {
 const colors = {
   buttonBackground: '#78787A99',
   RED: '#F44336',
+  RED1: '#F04A4C',
   _NEW: '#FF0867',
   _SELLING_FAST: '#000000',
   _RESTOCKED: '#FF8017',
@@ -108,6 +109,11 @@ const colors = {
   TRANS_BLACK: 'rgba(0,0,0,0.2)',
   _DARK_GRAY: '#848282',
   SECONDARY: '#F05E5E',
+  PRIMARY: '#24786D',
+  BLACK: '#1E1E1E',
+  WHITE: '#ffffff',
+  GREEN: '#0FE16D',
+  DARK_BORDER_COLOR: '#363F3B',
 };
 
 const _getOldDate = () => {

@@ -1,4 +1,12 @@
-import {Alert, Image, Pressable, StyleSheet, Text, View} from 'react-native';
+import {
+  Alert,
+  Image,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import React, {useState} from 'react';
 import AppStyles from '../../styles/AppStyles';
 import CommonInput from '../../components/CommonInput';
@@ -45,10 +53,6 @@ const LoginScreen = () => {
         // justifyContent: 'space-between',
         paddingHorizontal: 24,
       }}>
-      <Pressable style={styles.rippleBackBtn}>
-        <Ionicons name="arrow-back" size={20} color="#000E08" />
-      </Pressable>
-
       {_getVerticalPadding(50)}
 
       <View
@@ -128,10 +132,10 @@ const LoginScreen = () => {
             Forgot password?
           </Text>
         </Pressable>
+        {_getVerticalPadding(50)}
       </View>
 
       {/* Login Button and Forgot Password */}
-
       {_getVerticalPadding(30)}
 
       <View style={{flex: 1, justifyContent: 'flex-end'}}>
@@ -140,6 +144,13 @@ const LoginScreen = () => {
           title={'Login'}
           titleStyle={style.text_16_Bold_White}
           style={styles.PrimaryButton}></PrimaryButton>
+
+        <Pressable onPress={() => navigation.navigate('SignUpScreen')}>
+          <Text
+            style={[style.text_14_Medium_PrimaryColor, {textAlign: 'center'}]}>
+            Create account? Signup
+          </Text>
+        </Pressable>
 
         {_getVerticalPadding(16)}
       </View>
